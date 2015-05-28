@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/main_recom_title"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_login_yes"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/app_background" >
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/recom_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/recom_dish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tabsbar"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="今日推荐"
+                    android:textColor="@color/selector_tabtext_color"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/recom_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tabsbar"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="今日主题"
+                    android:textColor="@color/selector_tabtext_color"
+                    android:textSize="18sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/title_recom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/linear"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="平淡食材滋味浓"
+                    android:textColor="#FFE06224"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="情怀分类：亲子\n情怀菜品：上汤娃娃菜"
+                    android:textColor="#FFE06224"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/recomtitle_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recom_demodish" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="     亲爱的SoFun用户，今天为您带来的菜品推荐是上汤娃娃菜。天气转凉，有没有一道菜让你暖心暖胃？幼时的我们常常挑食，却总是不能拒绝皮蛋和火腿的美味，娃娃菜的营养也恰到好处，在父母关爱的眼神中喝光碗中的高汤，窗外寒风簌簌，窗内是浓的化不开的亲情。时光飞逝，随着我们的成长父母也老了，当他们终于被我们劝成了等开饭的那个人的时候，当你亲自掌勺端出这道菜的时候，是不是想起了童年的餐桌？"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="情怀书籍：城南旧事\n书籍作者：林海音"
+                    android:textColor="#FFE06224"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/recomtitle_book"
+                    android:layout_width="180dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recomdemobook" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="    不同的时代，相似的童年，除了美食，跟着林海音回到童年去寻找记忆中的小时候。"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="情怀歌曲：时间都去哪儿了\n演唱歌手：王铮亮"
+                    android:textColor="#FFE06224"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/recomtitle_song"
+                    android:layout_width="fill_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recomdemosong" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="    半生藏了许多话，藏进了白发。王铮亮温暖的声线是否勾起你对父母的思念。"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/listViewshow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/recomDish_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/item_divide"
+                android:dividerHeight="1dp"
+                android:listSelector="#00000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dish_empty_recom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/linear"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/shape_recom_empty" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/recom_empty"
+                android:textColor="#FFCCCCCC"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_login_no"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/backgroud_main1"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/saytologin"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tologin"
+            android:layout_centerHorizontal="true"
+            android:text="@string/clicktologin"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

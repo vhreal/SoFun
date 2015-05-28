@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dish_shaked_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fang_normal_pressed"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/friend_photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/image_head_default" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/friend_photo" >
+
+        <TextView
+            android:id="@+id/friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#555"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/friend_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friend_name"
+            android:layout_marginTop="5dp"
+            android:textColor="#555"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@null"
+        android:scaleType="matrix"
+        android:src="@drawable/shape_point" />
+
+</RelativeLayout>

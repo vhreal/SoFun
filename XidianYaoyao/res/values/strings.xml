@@ -1,0 +1,140 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">SoFun</string>
+
+    <!-- shake -->
+    <string name="shake_title">摇到的菜</string>
+    <string name="shake_select">选择摇摇</string>
+    <string name="shake_group">饭团摇摇</string>
+    <string name="shake_pag">摇一摇，吃饭啦！</string>
+    <string name="shake_select_item">一次摇出几个菜</string>
+    <string name="shake_select_price">单价</string>
+    <string name="shake_select_score">评分</string>
+    <string name="shake_select_taste">口味</string>
+    <string name="shake_select_nutrition">营养</string>
+    <string name="shake_group_restau">消费饭馆</string>
+    <string name="shake_group_price">消费上限</string>
+    <string name="shake_group_number">消费人数</string>
+    <string name="shake_group_search">输入饭馆</string>
+
+    <!-- footer -->
+    <string name="footer_seemore">查看更多</string>
+    <string name="footer_loading" tools:ignore="TypographyEllipsis">加载中...</string>
+
+    <!-- restaurant -->
+    <string name="evaluate_see_empty">亲，暂无评论，赶紧抢沙发！</string>
+    <string name="photo_empty">亲，暂无图片，点此上传吧！</string>
+    <string name="evaluate_see_title">吃货评论</string>
+    <string name="restau_dish_see">查看评论</string>
+    <string name="restau_dish_collectno">还未收藏</string>
+    <string name="restau_dish_collectyes">已经收藏</string>
+    <string name="restau_dish_share">分享社交</string>
+    <string name="restau_dish_msg">短信饭局</string>
+    <string name="restau_dish_intro">简介</string>
+    <string name="restau_dish_photo">相册</string>
+    <string name="restau_dish_recom">推荐</string>
+    <string name="restau_dish_locat">位置</string>
+    <string name="restau_intro">简介</string>
+    <string name="restau_photo">相册</string>
+    <string name="restau_recom">推荐</string>
+    <string name="restau_locat">位置</string>
+    <string name="restau_add_title">添加饭馆</string>
+    <string name="restau_add_name">饭馆名称(必填)</string>
+    <string name="restau_add_call">饭馆电话(必填)</string>
+    <string name="restau_add_addr">饭馆地址(必填)</string>
+    <string name="restau_error">饭馆纠错</string>
+    <string name="restau_error_title">饭馆信息纠错</string>
+    <string name="restau_error_summary">请输入正确的饭馆电话或者地址信息</string>
+    <string name="restau_photo_btn">上传照片</string>
+    <string name="restau_photo_pre">上一张</string>
+    <string name="restau_photo_lat">下一张</string>
+
+    <!-- person -->
+    <string name="recom_empty">暂无任何推荐！</string>
+    <string name="history_empty">暂无任何浏览呢！</string>
+    <string name="collect_empty">暂无任何收藏呢！</string>
+    <string name="morego_empty">暂无任何常去饭馆！</string>
+    <string name="fans_empty">暂无任何粉丝呢！</string>
+    <string name="follows_empty">暂无任何关注呢！</string>
+    <string name="person_change_pwd_title">修改密码</string>
+    <string name="person_change_pwd_yuan">原来密码</string>
+    <string name="person_change_pwd_xin">新设密码</string>
+    <string name="person_change_pwd_ding">确定密码</string>
+    <string name="person_change_pwd_btn">修改提交</string>
+    <string name="person_collect_title">我的收藏</string>
+    <string name="person_evaluate_title">添加评论</string>
+    <string name="person_evaluate_score">评分</string>
+    <string name="person_evaluate_summary">添加您的评语。</string>
+    <string name="person_findpwd_title">找回密码</string>
+    <string name="person_findpwd_text">输入要找回密码的账号</string>
+    <string name="person_findpwd_btn">去邮箱找回密码</string>
+    <string name="person_friendsee_title">详细资料</string>
+    <string name="person_friendsee_collect">TA的收藏</string>
+    <string name="person_friendsee_follow">TA的关注</string>
+    <string name="person_friendsee_fan">TA的粉丝</string>
+    <string name="person_login_title">SoFun</string>
+    <string name="person_login_name">输入账号</string>
+    <string name="person_login_pwd">输入密码</string>
+    <string name="person_login_btn">登录</string>
+    <string name="person_login_forget">忘记密码</string>
+    <string name="person_login_regist">注册账号</string>
+    <string name="person_regist_title">注册</string>
+    <string name="person_regist_user">注册账号</string>
+    <string name="person_regist_pwd">注册密码</string>
+    <string name="person_regist_ding">确定密码</string>
+    <string name="person_regist_mail">注册邮箱:用于找回密码</string>
+    <string name="person_regist_nan">男</string>
+    <string name="person_regist_nv">女</string>
+    <string name="person_regist_btn">注册提交</string>
+    <string name="person_suggtion_title">意见反馈</string>
+    <string name="person_suggtion">您的意见非常宝贵。</string>
+    <string name="person_friendsearch_title">搜索吃货</string>
+    <string name="person_friendsearch_name">输入要搜索的吃货名称</string>
+    <string name="person_history_pre">我浏览了</string>
+    <string name="person_eat_trace">饮食跟踪</string>
+    <string name="person_eat_zao">输入早餐菜品</string>
+    <string name="person_eat_wu">输入午餐菜品</string>
+    <string name="person_eat_wan">输入晚餐菜品</string>
+    <string name="person_friendlist_title">我的好友</string>
+    <string name="person_frienflist_follow">关注吃友</string>
+    <string name="person_frienflist_fan">粉丝达人</string>
+
+    <!-- main -->
+    <string name="saytologin">亲，你还没登录！</string>
+    <string name="clicktologin">请点此进行登录查看！</string>
+    <string name="main_person_title">我的</string>
+    <string name="main_dishrank_title">饭菜排行</string>
+    <string name="main_restaurank_title">饭馆排行</string>
+    <string name="main_recom_title">推荐</string>
+    <string name="main_search_title">请输入要搜索的饭馆或饭菜</string>
+    <string name="main_search_pag">搜美食，找饭馆！</string>
+    <string name="main_search_dish">饭菜搜搜</string>
+    <string name="main_search_restau">饭馆搜搜</string>
+    <string name="main_about_title">关于SoFun</string>
+    <string name="main_about_name">SoFun v1.0</string>
+    <string name="main_about_mail">交流邮箱 xidianyaoyao@163.com</string>
+    <string name="main_about_text">NutShell团队精诚制作</string>
+    <string name="main_shake">摇摇</string>
+    <string name="main_search">搜索</string>
+    <string name="main_rank">排行</string>
+    <string name="main_recom">推荐</string>
+    <string name="main_me">我的</string>
+    <string name="main_person_collect">收藏菜夹</string>
+    <string name="main_person_friend">吃货好友</string>
+    <string name="main_person_lock">修改密码</string>
+    <string name="main_person_restau">常去饭馆</string>
+    <string name="main_person_see">最近浏览</string>
+
+    <!-- setting -->
+    <string name="main_set_title">设置</string>
+    <string name="main_set_voice">音效开关</string>
+    <string name="main_set_vibrate">振动开关</string>
+    <string name="main_set_delete">清除图片缓存</string>
+    <string name="main_set_add">添加新饭馆</string>
+    <string name="main_set_return">意见反馈</string>
+    <string name="main_set_about">关于SoFun</string>
+    <string name="main_set_exitapp">退出应用</string>
+    <string name="main_set_exitlogin">退出登录</string>
+    <string name="main_set_login">点击登录</string>
+
+</resources>

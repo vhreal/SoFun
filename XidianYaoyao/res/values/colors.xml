@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="c_bai">#FFFFFFFF</color>
+    <color name="c_hei">#FF2B3236</color>
+    <color name="c_hui">#FF3F474A</color>
+    <color name="c_blue">#FF39B8F8</color>
+    <color name="c_qiancheng">#FFF4981E</color>
+    <color name="c_red">#FFE41E24</color>
+    <color name="c_shencheng">#FFE06224</color>
+    <color name="c_huihong">#FFC17819</color>
+    <color name="app_background">#FFFFFFFF</color>
+    <color name="item_divide">#CCCCCCCC</color>
+    <color name="item_pressed">#FFB6DA53</color>
+    <color name="item_normal">#FFF4FFEF</color>
+    <color name="empty_text">#FFCCCCCC</color>
+
+</resources>

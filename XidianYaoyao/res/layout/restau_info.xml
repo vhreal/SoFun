@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xidianyaoyao.app.ui.widget.AnimationTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/anim_tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/title_bar" >
+
+            <TextView
+                android:id="@+id/restau_titleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/restau_back"
+                android:layout_width="45dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/head_selector"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/head_back" />
+
+            <ImageView
+                android:id="@+id/restau_home"
+                android:layout_width="45dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:background="@drawable/head_selector"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/head_home" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/restau_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/restau_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tabsbar"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/restau_intro"
+                android:textColor="@color/selector_tabtext_color"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/restau_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tabsbar"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/restau_photo"
+                android:textColor="@color/selector_tabtext_color"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/restau_recom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tabsbar"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/restau_recom"
+                android:textColor="@color/selector_tabtext_color"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <!-- 此处需用指定的id, 属于tab的容器 -->
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <!-- 此处需用指定的id, 在这里隐藏，采用TabHost+RadioGroup实现，所以隐藏它 -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</cn.xidianyaoyao.app.ui.widget.AnimationTabHost>

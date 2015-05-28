@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dish_shaked_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fang_normal_pressed"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/dish_recom_image"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_dish_default" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@null"
+        android:scaleType="matrix"
+        android:src="@drawable/shape_point" />
+
+    <TextView
+        android:id="@+id/dish_recom_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/dish_recom_image"
+        android:textColor="@color/c_shencheng"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dish_recom_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dish_recom_name"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/dish_recom_image"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/dish_recom_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dish_recom_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/dish_recom_price"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/dish_recom_taste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dish_recom_score"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/dish_recom_image"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/dish_recom_nutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dish_recom_taste"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/dish_recom_image"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+</RelativeLayout>

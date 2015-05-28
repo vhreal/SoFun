@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroud_main2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar" >
+
+        <ImageView
+            android:id="@+id/restau_add_back"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/head_selector"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/head_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/restau_add_title"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/restau_add_send"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:background="@drawable/head_selector"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/head_add" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/restau_add_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_box"
+                android:hint="@string/restau_add_name"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/restau_add_call"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_box"
+                android:hint="@string/restau_add_call"
+                android:inputType="textMultiLine"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/restau_add_addr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_box"
+                android:hint="@string/restau_add_addr"
+                android:inputType="textMultiLine"
+                android:textColor="#000"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

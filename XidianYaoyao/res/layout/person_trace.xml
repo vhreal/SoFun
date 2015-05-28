@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroud_main2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar" >
+
+        <ImageView
+            android:id="@+id/eat_trace_back"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/head_selector"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/head_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/person_eat_trace"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/eat_trace_see"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:background="@drawable/head_selector"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/head_see" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/eat_trace_zao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_box"
+                android:hint="@string/person_eat_zao"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/eat_trace_wu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_box"
+                android:hint="@string/person_eat_wu"
+                android:inputType="textMultiLine"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/eat_trace_wan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_box"
+                android:hint="@string/person_eat_wan"
+                android:inputType="textMultiLine"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/trace_summary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_box"
+                android:lines="6"
+                android:textColor="#FFE06224"
+                android:textSize="18sp"
+                android:textStyle="bold" 
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/main_recom_title"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_login_yes"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/app_background" >
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/recom_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/recom_dish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tabsbar"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="今日推荐"
+                    android:textColor="@color/selector_tabtext_color"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/recom_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tabsbar"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="今日主题"
+                    android:textColor="@color/selector_tabtext_color"
+                    android:textSize="18sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/title_recom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/linear"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="浓情两味敬如宾"
+                    android:textColor="#FFE06224"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="情怀分类：爱情\n情怀菜品：红酒烩牛肉"
+                    android:textColor="#FFE06224"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/recomtitle_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recomdemodish3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="     亲爱的SoFun用户，今天为您带来的菜品推荐是红酒烩牛肉。经过红酒长时间的炖煮和沁润，牛肉已经呈现漂亮的颜色，香气浓郁了，就像两个人的爱情，情到深处。肉质的鲜美，红酒的绵长，颇有一种“金风玉露一相逢”的错觉。恰如爱情里的遭逢，没有天生的一对，只有互相包容的两人，情感与味觉，你中有我，我中有你。"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="情怀书籍：京华烟云\n书籍作者：林语堂"
+                    android:textColor="#FFE06224"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/recomtitle_book"
+                    android:layout_width="180dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recomdemobook3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="    原本是一次将《红楼梦》译作英文的尝试，却因故而作罢，却由此诞生了眼前这部《京华烟云》，林语堂的笔下，爱情原来如此复杂与简单。"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="情怀歌曲：我的歌声里\n演唱歌手：曲婉婷"
+                    android:textColor="#FFE06224"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/recomtitle_song"
+                    android:layout_width="fill_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recomdemosong3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="    恋人存在于深深的脑海里，而这道红酒烩牛肉的滋味也藏匿了太多的甜蜜回忆。"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/listViewshow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/recomDish_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/item_divide"
+                android:dividerHeight="1dp"
+                android:listSelector="#00000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dish_empty_recom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/linear"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/shape_recom_empty" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/recom_empty"
+                android:textColor="#FFCCCCCC"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_login_no"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/backgroud_main1"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/saytologin"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tologin"
+            android:layout_centerHorizontal="true"
+            android:text="@string/clicktologin"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <RadioGroup
+            android:id="@+id/rank_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rank_dish"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/preference_left_item"
+                android:button="@null"
+                android:checked="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_dishrank_title"
+                android:textColor="#555"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rank_restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/preference_right_item"
+                android:button="@null"
+                android:checked="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_restaurank_title"
+                android:textColor="#555"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rankRestau"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/rankRestau_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/item_divide"
+            android:dividerHeight="1dp"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rankDish"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/rankDish_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/item_divide"
+            android:dividerHeight="1dp"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+
+</LinearLayout>

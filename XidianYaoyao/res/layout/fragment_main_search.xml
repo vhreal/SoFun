@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_main1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_vertical" >
+
+            <AutoCompleteTextView
+                android:id="@+id/search_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_bar_edit_bg"
+                android:completionThreshold="1"
+                android:dropDownSelector="@drawable/fang_normal_pressed"
+                android:dropDownVerticalOffset="8dp"
+                android:hint="@string/main_search_title"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/search_deleteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@null"
+                android:src="@drawable/search_edit_delete"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/search_submit"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:background="@drawable/head_selector"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/head_search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/main_search_dish"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_first_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/msgImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/item_about" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/msgImage"
+                    android:padding="10dp"
+                    android:text="@string/main_search_dish"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:scaleType="matrix"
+                    android:src="@drawable/shape_point" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_search_restau"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_last_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/aboutImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/item_restau" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/aboutImage"
+                    android:padding="10dp"
+                    android:text="@string/main_search_restau"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:scaleType="matrix"
+                    android:src="@drawable/shape_point" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/main_search_pag"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

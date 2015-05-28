@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background" >
+
+    <LinearLayout
+        android:id="@+id/photo_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/shape_photo_empty" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/photo_empty"
+            android:textColor="#FFCCCCCC"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/photo_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_hui" >
+
+                <RelativeLayout
+                    android:id="@+id/photo_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/restau_photo_currentNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/restau_photo_totalNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/restau_photo_currentNum"
+                        android:textColor="#fff"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/photo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/photo_number"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <ImageView
+                        android:id="@+id/restau_photo_image"
+                        android:layout_width="fill_parent"
+                        android:layout_height="250dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/image_dish_default" >
+                    </ImageView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/photo"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/restau_photo_sendperson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/restau_photo_sendtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/restau_photo_sendperson"
+                        android:textColor="#fff"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/photo_layout"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/restau_photo_pre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/yuan_qiancheng_shencheng"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/restau_photo_pre"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/restau_photo_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/yuan_qiancheng_shencheng"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_camera"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/restau_photo_btn"
+                            android:textColor="#fff"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/restau_photo_las"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/yuan_qiancheng_shencheng"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/restau_photo_lat"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

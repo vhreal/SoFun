@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_main1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/main_shake_set"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:background="@drawable/head_selector"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/head_set" />
+        
+         <RadioGroup
+            android:id="@+id/shake_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/shake_select"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/preference_left_item"
+                android:button="@null"
+                android:checked="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/shake_select"
+                android:textColor="#555"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/shake_groupmeal"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/preference_right_item"
+                android:button="@null"
+                android:checked="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/shake_group"
+                android:textColor="#555"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/shake_tu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:src="@drawable/tu_shake" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/shake_pag"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

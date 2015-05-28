@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroud_main2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar" >
+
+        <ImageView
+            android:id="@+id/change_pwd_back"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/head_selector"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/head_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/person_change_pwd_title"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="40dp" >
+
+            <EditText
+                android:id="@+id/change_pwd_yuan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_box"
+                android:hint="@string/person_change_pwd_yuan"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/change_pwd_xin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_box"
+                android:hint="@string/person_change_pwd_xin"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/change_pwd_ding"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_box"
+                android:hint="@string/person_change_pwd_ding"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/change_pwd_sumbit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/yuan_shencheng_qiancheng"
+                    android:text="@string/person_change_pwd_btn"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

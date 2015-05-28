@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/main_recom_title"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_login_yes"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/app_background" >
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/recom_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/recom_dish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tabsbar"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="今日推荐"
+                    android:textColor="@color/selector_tabtext_color"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/recom_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_tabsbar"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="今日主题"
+                    android:textColor="@color/selector_tabtext_color"
+                    android:textSize="18sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/title_recom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/linear"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="不爱红妆爱戎装"
+                    android:textColor="#FFE06224"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="情怀分类：军旅\n情怀菜品：梅菜扣肉"
+                    android:textColor="#FFE06224"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/recomtitle_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recomdemodish2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="     亲爱的SoFun用户，今天为您带来的菜品推荐是梅菜扣肉。军旅生涯，戎马一生，相信是很多人年轻时候的梦想，当年的辉煌战绩，九死一生，恐怕已经成为了街头巷尾老头们的说笑闲谈。一筷子梅菜扣肉，夹到馍中，一口下去嘴里是浓稠的肉味。相信这道菜是很多老兵的心头好，太平盛世，就让我们在菜品中体味军人的铮铮铁骨和戎马柔情吧。"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="情怀书籍：亮剑\n书籍作者：都梁"
+                    android:textColor="#FFE06224"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/recomtitle_book"
+                    android:layout_width="180dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recomdemobook2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="    说起军旅，大家一定会想起独立团的李云龙。小说原著《亮剑》出于转业军人都梁之手，此前他没有发表过任何文学作品。"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="情怀歌曲：中国军魂\n演唱：《亮剑》原声"
+                    android:textColor="#FFE06224"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/recomtitle_song"
+                    android:layout_width="fill_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/recomdemosong2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="    提到亮剑哪能不提它的主题曲《中国军魂》呢。这首歌的曲调风格十分有气势，不畏艰辛，视死如归，展示了中国军队的军魂。"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/listViewshow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/recomDish_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/item_divide"
+                android:dividerHeight="1dp"
+                android:listSelector="#00000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dish_empty_recom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/linear"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/shape_recom_empty" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/recom_empty"
+                android:textColor="#FFCCCCCC"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_login_no"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/backgroud_main1"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/saytologin"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tologin"
+            android:layout_centerHorizontal="true"
+            android:text="@string/clicktologin"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

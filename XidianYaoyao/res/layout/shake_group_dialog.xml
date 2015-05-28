@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45dp" >
+
+        <LinearLayout
+            android:id="@+id/dialog_ofShakeGroup"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dialog_shake_set"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/shake_group_restau"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_item"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/restauHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/shake_group_restau"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/restauSearch"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/search_bar_edit_bg"
+                    android:completionThreshold="1"
+                    android:dropDownSelector="@drawable/fang_normal_pressed"
+                    android:dropDownVerticalOffset="3dp"
+                    android:hint="@string/shake_group_search"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shake_group_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_item"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/priceHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/shake_group_price"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/priceShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shake_group_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_item"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/numberHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/shake_group_number"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/numberShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

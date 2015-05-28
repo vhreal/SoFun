@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rank_dish_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fang_normal_pressed"
+    android:padding="3dp" >
+
+    <TextView
+        android:id="@+id/rankdish_dish_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:scaleType="matrix"
+        android:src="@drawable/shape_point" />
+
+    <RelativeLayout
+        android:id="@+id/rankdish_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rankdish_dish_number" >
+
+        <ImageView
+            android:id="@+id/rankdish_dish_image"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_dish_default" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rankdish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/rankdish_image" >
+
+        <TextView
+            android:id="@+id/rankdish_dish_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFE06224"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rankdish_restau_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rankdish_dish_name"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rankdish_name"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/rankdish_image" >
+
+        <TextView
+            android:id="@+id/rankdish_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/rankdish_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rankdish_price"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/rank_dish_item_honor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rankdish_price"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/rankdish_score"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+</RelativeLayout>

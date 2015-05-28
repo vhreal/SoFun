@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/main_set_title"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/main_set_back"
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/head_selector"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/head_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_voice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_first_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/voiceImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/item_voice" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/voiceImage"
+                    android:padding="10dp"
+                    android:text="@string/main_set_voice"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/main_set_voice"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/switch_set" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_vibrate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_last_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/vibrateImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/item_vibrate" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/vibrateImage"
+                    android:padding="10dp"
+                    android:text="@string/main_set_vibrate"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/main_set_vibrate"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/switch_set" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_set_clearcache"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_single_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/deleteImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/item_delete" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/deleteImage"
+                    android:padding="10dp"
+                    android:text="@string/main_set_delete"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:scaleType="matrix"
+                    android:src="@drawable/shape_point" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_set_addrestau"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_single_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/addImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/item_add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/addImage"
+                    android:padding="10dp"
+                    android:text="@string/main_set_add"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:scaleType="matrix"
+                    android:src="@drawable/shape_point" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_set_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_first_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/msgImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/item_msg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/msgImage"
+                    android:padding="10dp"
+                    android:text="@string/main_set_return"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:scaleType="matrix"
+                    android:src="@drawable/shape_point" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_set_about"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_last_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/aboutImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/item_about" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/aboutImage"
+                    android:padding="10dp"
+                    android:text="@string/main_set_about"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:scaleType="matrix"
+                    android:src="@drawable/shape_point" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <Button
+                    android:id="@+id/main_set_exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/yuan_shencheng_qiancheng"
+                    android:text="@string/main_set_exitapp"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/user_exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/yuan_shencheng_qiancheng"
+                    android:text="@string/main_set_exitlogin"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/user_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/yuan_shencheng_qiancheng"
+                    android:text="@string/main_set_login"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

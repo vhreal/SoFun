@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xidianyaoyao.app.ui.widget.AnimationTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/anim_main_tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 此处需用指定的id, 属于tab的容器 -->
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" />
+
+        <RadioGroup
+            android:id="@+id/main_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/main_shake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/checkbox_tab"
+                android:button="@null"
+                android:drawableTop="@drawable/main_shake"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/main_shake"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/main_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/checkbox_tab"
+                android:button="@null"
+                android:drawableTop="@drawable/main_search"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/main_search"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/main_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/checkbox_tab"
+                android:button="@null"
+                android:drawableTop="@drawable/main_rank"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/main_rank"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/main_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/checkbox_tab"
+                android:button="@null"
+                android:drawableTop="@drawable/main_recommend"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/main_recom"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/main_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/checkbox_tab"
+                android:button="@null"
+                android:drawableTop="@drawable/main_person"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/main_me"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <!-- 此处需用指定的id, 在这里隐藏，采用TabHost+RadioGroup实现，所以隐藏它 -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</cn.xidianyaoyao.app.ui.widget.AnimationTabHost>

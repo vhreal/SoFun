@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="myProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="scoreRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:minHeight">100dip</item>
+        <item name="android:maxHeight">100dip</item>
+    </style>    
+
+    <style name="AnimTop" parent="@android:style/Animation">  
+    	<item name="android:windowEnterAnimation">@anim/push_top_in</item>
+        <item name="android:windowExitAnimation">@anim/push_top_out</item>
+	</style>
+	
+    <style name="MyDialogStyleTop" parent="android:Theme.Dialog" >
+        <item name="android:windowAnimationStyle">@style/AnimTop</item>
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--对话框半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--去掉模糊阴影-->        
+     </style>
+
+</resources>

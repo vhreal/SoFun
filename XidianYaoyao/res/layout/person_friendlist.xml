@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xidianyaoyao.app.ui.widget.AnimationTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/anim_tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/title_bar" >
+
+            <ImageView
+                android:id="@+id/friend_back"
+                android:layout_width="45dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/head_selector"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/head_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/person_friendlist_title"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/friend_find"
+                android:layout_width="45dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/head_selector"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/head_find" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/friend_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/friend_follows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tabsbar"
+                android:button="@null"
+                android:drawableLeft="@drawable/person_focus"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/person_frienflist_follow"
+                android:textColor="@color/selector_tabtext_color"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/friend_fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tabsbar"
+                android:button="@null"
+                android:drawableLeft="@drawable/person_fans"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/person_frienflist_fan"
+                android:textColor="@color/selector_tabtext_color"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <!-- 此处需用指定的id, 属于tab的容器 -->
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <!-- 此处需用指定的id, 在这里隐藏，采用TabHost+RadioGroup实现，所以隐藏它 -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</cn.xidianyaoyao.app.ui.widget.AnimationTabHost>
